@@ -13,7 +13,7 @@ for i in data.paragraphs:
         patron_color = patron_coord + r' ?\, ?' + patron + r'\)'
 
         coord_stg_tup = re.findall(patron_coord + r'\)', i.text)
-        color_stg_tup = re.findall(patron_color, i.255, 255, 0)
+        color_stg_tup = re.findall(patron_color, i.text)
 
         coord_num_tup = []      
         color_val = re.findall(r'[-+]?\d*\.\d*',color_stg_tup[0])   
